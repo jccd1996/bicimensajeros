@@ -4,8 +4,10 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class Bicimensajero():Parcelable {
-    var uid:String=""
+class Bicimensajero(var uid:String="",var nombres:String="",var apellidos:String="",var correo:String="",var celular:String="",
+                    var fotoPerfil:String="",var activo:String="",var disponible:String="",var edad:String="",var tiempoTrabajando:String="",
+                    var rating:String="",var foto2:String="",var tipoVehiculo:String=""):Parcelable {
+ /*   var uid:String=""
     var nombres:String=""
     var apellidos:String=""
     var correo:String=""
@@ -37,6 +39,6 @@ class Bicimensajero():Parcelable {
         this.nombres=nombres
         this.tipoVehiculo=tipoVehiculo
         this.fotoPerfil=fotoPerfil
-    }
+    }*/
 
 }

@@ -5,10 +5,11 @@ import android.graphics.Bitmap
 
 
 
-open class Usuario() {
+open class Usuario(var uid:String="",var nombres:String="",var apellidos:String="",var correo:String="",var celular:String="",var fotoPerfil:String="",
+                   var direccion:String="",var numeroPedidos:String="",var departamento:String="",var ciudad:String="",var modoPago:String=""){
    // constructor():this("","","","","","")
 
-    var uid:String=""
+    /*var uid:String=""
     var nombres:String=""
     var apellidos:String=""
     var correo:String=""
@@ -44,6 +45,6 @@ open class Usuario() {
         this.modoPago=modoPago
 
 
-    }
+    }*/
 
 }
