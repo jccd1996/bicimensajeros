@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Actividades.LoginActivity"
+        android:orientation="vertical"
+        android:fillViewport="true">
+<android.support.constraint.ConstraintLayout
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:paddingBottom="@dimen/activity_vertical_margin"
+                                             android:paddingLeft="@dimen/activity_horizontal_margin"
+                                             android:paddingRight="@dimen/activity_horizontal_margin"
+                                             android:paddingTop="@dimen/activity_vertical_margin"
+                                              android:id="@+id/linearLayout"
+                                             android:visibility="visible">
+
+
+    <!-- Login progress -->
+    <ProgressBar
+            android:id="@+id/login_progress"
+            style="@android:style/Widget.Material.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:indeterminate="true"
+    />
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/tvUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textColorHint="#aaaaaa"
+            android:textColorLink="#000"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/tvContrasena"
+            app:layout_constraintVertical_chainStyle="packed" app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="32dp" android:paddingLeft="0dp" android:paddingRight="0dp" android:padding="0dp">
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:paddingLeft="14dp"
+                android:id="@+id/etUsuario"
+                android:hint="@string/usuario"
+                android:textSize="16sp"
+                android:maxLength="25"
+                android:theme="@style/EditText"
+                android:paddingRight="0dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/tvContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="#aaaaaa"
+            android:textColorLink="#000"
+            app:passwordToggleEnabled="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
+            android:paddingLeft="0dp" android:paddingRight="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsuario" app:layout_constraintBottom_toTopOf="@+id/bIngresar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    >
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/etContrasena"
+                android:hint="@string/contrasena"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:maxLength="25"
+                android:paddingLeft="14dp"
+                android:theme="@style/EditText"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+            android:text="@string/olvidaste_contrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOlvidoContrasena"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/bIngresar"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/tvNoTienesCuenta"
+            android:onClick="olvidarContrasena"/>
+    <Button
+            android:text="@string/ingresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bIngresar"
+            style="@style/Widget.MaterialComponents.Button" android:textSize="14sp"
+            android:onClick="login"
+            android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/tvContrasena"
+            app:layout_constraintBottom_toTopOf="@+id/tvOlvidoContrasena" android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp"/>
+    <TextView
+            android:text="@string/no_tienes_cuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoTienesCuenta" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/tvRegistrar"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:onClick="irRegistro"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="@string/registrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRegistrar"
+            app:layout_constraintStart_toEndOf="@+id/tvNoTienesCuenta" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBaseline_toBaselineOf="@+id/tvNoTienesCuenta"
+            android:layout_marginLeft="5dp" android:layout_marginStart="5dp" android:textStyle="bold"
+            android:onClick="irRegistro"
+    />
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline2"
+                                          android:orientation="horizontal" app:layout_constraintGuide_percent="0.4"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@mipmap/ic_logo"
+            android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

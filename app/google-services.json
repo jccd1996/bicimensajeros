@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "930990690938",
+    "firebase_url": "https://bicimensajeros-e3ad9.firebaseio.com",
+    "project_id": "bicimensajeros-e3ad9",
+    "storage_bucket": "bicimensajeros-e3ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930990690938:android:d5ba42ff6762bc38",
+        "android_client_info": {
+          "package_name": "com.example.bicimensajeros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930990690938-89ugoebrq5e4bnl0c7nupd0t232i1apl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bicimensajeros",
+            "certificate_hash": "28f63f6ec60107036bba5f957b207ee551c50ae3"
+          }
+        },
+        {
+          "client_id": "930990690938-cgasc4bpev6h7uplvicp6a16eo38kbjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgTL4Xp2RDSj3eRwN-o-1bVW6t4F3IClk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930990690938-cgasc4bpev6h7uplvicp6a16eo38kbjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

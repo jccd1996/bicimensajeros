@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Bicimensajeros</string>
+    <!-- Registro Activity -->
+    <string name="ingrese_nombres">Nombres</string>
+    <string name="ingrese_apellidos">Apellidos</string>
+    <string name="ingrese_correo">Correo electronico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="requerido">*Requerido</string>
+    <string name="nombres_incorrectos">Escriba sus nombres</string>
+    <string name="apellidos_incorrectos">Escriba sus apellidos</string>
+    <string name="correo_incorrecto">Correo no valido</string>
+    <string name="celular_incorrecto">Celular no válido</string>
+    <string name="contrasena_incorrecta">La contraseña debe tener mínimo 6 caracteres</string>
+    <string name="coincidir_contrasena">Las contraseñas no coinciden</string>
+    <string name="usuario_registrado">Usuario registrado</string>
+    <string name="no_permiso_galeria">No diste permiso para acceder a la galería</string>
+    <string name="seleccionar_foto_intent_titulo">Seleccionar una foto</string>
+    <string name="error_internet">Revisa tu conexión a internet</string>
+
+
+    <!-- Login Activity -->
+    <string name="ingresar">Iniciar sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="olvidaste_contrasena">¿Olvidaste la contraseña?</string>
+    <string name="correo_enviado">Revisa tu correo electronico</string>
+    <string name="correo_error">Error al enviar el correo</string>
+    <string name="no_tienes_cuenta">¿No tienes una cuenta?</string>
+    <string name="registrate">Regístrate</string>
+    <string name="error_autenticacion">Error en la autenticación</string>
+    <string name="enviar_recuperar_contrasena">Enviar correo</string>
+    <string name="cancelar">Cancelar</string>
+
+
+    <!-- Dialogo Recuperar contrasena -->
+    <string name="info_correo">Ingresa el correo electronico para recuperar tu contraseña, se te enviara un link
+        inmediatamente a tu correo
+    </string>
+    <string name="recordar_contraseña">Recordar contraseña</string>
+
+
+    <!-- Main Activity -->
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="perfil">Perfil</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="ingrese_celular">Celular</string>
+    <string name="repetir_contrasena">Repetir contraseña</string>
+    <string name="email">Email</string>
+    <string name="direccion">Dirección</string>
+    <string name="numero_pedidos">Número de pedidos</string>
+    <string name="metodo_pago">Método de pago</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="editar">Editar</string>
+
+    <!-- Perfil Activity -->
+    <string name="editar_perfil">Editar Perfíl</string>
+
+    <!-- EditarPerfil Activity -->
+    <string name="cambiar_correo">Cambiar correo</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="nuevo_correo">Nuevo correo</string>
+    <string name="info_cambiar_correo">Por tu seguridad, debes ingresar la contraseña de tu perfíl para poder cambiar el
+        correo electrónico.
+    </string>
+    <string name="perfil_actualizado">Perfíl actualizado</string>
+    <string name="correo_actualizado">Correo actualizado</string>
+    <string name="correo_existente">El correo que ingresaste ya se encuentra registrado</string>
+    <string name="error_contrasena">Error en la contraseña</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="foto_por_seguridad_perfil">Tienes que tener una foto de PERFÍL por seguridad de los usuarios</string>
+    <string name="foto_por_seguridad_portada">Tienes que tener una foto de PORTADA por seguridad de los usuarios
+    </string>
+    <string name="foto_por_seguridad">Tienes que tener una foto de perfíl y de portada por seguridad de los usuarios
+    </string>
+    <string name="edad">Edad</string>
+    <string name="tiempo_laborando">Tiempo laborando</string>
+
+</resources>
